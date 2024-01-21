@@ -1,0 +1,82 @@
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+}
+
+body {
+    color: #4d91e9;
+    margin: 0;
+}
+
+#top {
+    text-align: center;
+    line-height: 5px;
+    border-bottom: #4d91e9 1px dashed;
+    font-weight: bold;
+}
+
+#middle {
+    width: 100%;
+}
+
+#middle-top {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px;
+    border-bottom: #4d91e9 1px dashed;
+}
+
+#middle-middle {
+    display: flex;
+    margin: 0 100px;
+    text-align: center;
+}
+
+#menu-choice, #menu-choice:focus {
+    background-color: transparent;
+    color: inherit;
+    border: 0px;
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+#menu-message {
+    display: none;
+    max-width: 280px;
+    float: left;
+}
+
+#loading {
+    line-height: 5px;
+}
+
+#loading a {
+    color: #dac3c3;
+    margin-left: 30px;
+}
+
+#loading a:hover {
+    color: #dac3c3;
+}
+
+#loading a:active {
+    color: #dac3c3;
+}
+
+.typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    letter-spacing: 0.15em;
+    animation: typing 5s steps(30, end) forwards;
+}
+
+@keyframes typing {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}

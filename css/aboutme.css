@@ -1,0 +1,32 @@
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+}
+
+body {
+    color: #4d91e9;
+    margin: 0;
+}
+
+#top {
+    text-align: center;
+    line-height: 5px;
+    border-bottom: #4d91e9 1px dashed;
+    font-weight: bold;
+}
+
+#middle {
+    display: flex;
+    width: 100%;
+}
+
+#middle-top {
+    margin-top: 30px;
+    margin-left: 30px;
+    line-height: 5px;
+}
+
+.skills, tr {
+    border: #4d91e9 1px dashed;
+    width: 100%;
+}
