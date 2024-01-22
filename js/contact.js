@@ -8,7 +8,8 @@ function discord(loader) {
         if(time === 0) {
             clearInterval(interval);
             window.open('https://discord.com/users/jose_erico', '_blank');
-            loader.innerHTML = 'Loading, please wait....................OK';
+            loader.innerHTML = 'Loading, please wait....................OK'+
+            '<a href="https://discord.com/users/jose_erico" target="_blank">https://discord.com/users/jose_erico</a>';
         }
     }, 1000);
 }
@@ -23,7 +24,8 @@ function twitter(loader) {
         if(time === 0) {
             clearInterval(interval);
             window.open('https://twitter.com/joseErico_', '_blank');
-            loader.innerHTML = 'Loading, please wait....................OK';
+            loader.innerHTML = 'Loading, please wait....................OK'+
+            '<a href="https://twitter.com/joseErico_" target="_blank">https://twitter.com/joseErico_</a>';
         }
     }, 1000);
 }
@@ -53,7 +55,8 @@ function github(loader) {
         if(time === 0) {
             clearInterval(interval);
             window.open('https://github.com/joseErico', '_blank');
-            loader.innerHTML = 'Loading, please wait....................OK';
+            loader.innerHTML = 'Loading, please wait....................OK'+
+                                '<a href="https://github.com/joseErico" target="_blank">https://github.com/joseErico</a>';
         }
     }, 1000);
 }

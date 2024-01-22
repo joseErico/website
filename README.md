@@ -2,9 +2,9 @@
 
 **Description**
 
-This is my simple website. 
-You can see it by accessing https://joseerico.com. 
-Feel free to use it however you want.
+- This is my simple website.
+- You can see it by accessing https://joseerico.com.
+- You are free to use it however you want, except the images.
 
 **Badges**
 

@@ -26,13 +26,6 @@ function contact() {
     document.querySelector('#contact').style.display = 'block';
 }
 
-function clearData() {
-    
-    alert('Your name was removed from storage');
-    document.getElementById('name').innerHTML = '';
-    localStorage.setItem('name', '');
-}
-
 document.addEventListener('DOMContentLoaded', function () {
     //verify if is a mobile device or a small resolution
     if(screen.width < 1024) {
@@ -42,30 +35,18 @@ document.addEventListener('DOMContentLoaded', function () {
     //set datetime
     datetime();
 
-    //catch the user name
-    let name = localStorage.getItem('name');
-
-    if(name === null || name === '') {
-        let prompt = window.prompt('What\'s your name?');
-        name = (prompt ? prompt : 'Anonymous');
-    }
-    
-    localStorage.setItem('name', name);
-
     //functions available
     const functions = {
         1: resume,
         2: aboutme,
         3: nft,
-        4: contact,
-        5: clearData
+        4: contact
     };
 
     //menu choice
     let menuChoice = document.getElementById('menu-choice');
 
     //show welcome block
-    document.getElementById('name').innerText = name;
     document.getElementById('welcome').style.display = 'block';
 
     //show menu message
@@ -92,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
             let choice = menuChoice.value;
             const regex = /^\d+$/;
             
-            if(choice < 1 || choice > 5 || !regex.test(choice)) {
+            if(choice < 1 || choice > 4 || !regex.test(choice)) {
                 alert('Please, choose a valid option');
                 return false;
             }
