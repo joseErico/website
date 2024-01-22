@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
     //show menu options
     let interval = setInterval(() => {
         console.log(message.offsetWidth);
-        if(message.offsetWidth >= 359) {
+        if(message.offsetWidth >= 282) {
             document.getElementById('contacts').style.display = 'block';
             clearInterval(interval);
         }
