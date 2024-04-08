@@ -39,8 +39,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const functions = {
         1: resume,
         2: aboutme,
-        3: nft,
-        4: contact
+        3: contact
+        //3: nft,
+        //4: contact
     };
 
     //menu choice
@@ -73,7 +74,8 @@ document.addEventListener('DOMContentLoaded', function () {
             let choice = menuChoice.value;
             const regex = /^\d+$/;
             
-            if(choice < 1 || choice > 4 || !regex.test(choice)) {
+            if(choice < 1 || choice > 3 || !regex.test(choice)) {
+            //if(choice < 1 || choice > 4 || !regex.test(choice)) {
                 alert('Please, choose a valid option');
                 return false;
             }
