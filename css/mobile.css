@@ -1,0 +1,56 @@
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+}
+
+body {
+    background-color: #1d1b1bf5;
+    color: #4d91e9;
+}
+
+.typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    letter-spacing: 0.15em;
+    animation: typing 5s steps(30, end) forwards;
+}
+
+@keyframes typing {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+#message {
+    display: none;
+    max-width: 282px;
+    float: left;
+}
+
+#contacts {
+    display: none;
+    margin-top: 30px;
+}
+
+#contacts a {
+    color: #dac3c3;
+}
+
+#contacts a:hover {
+    color: #dac3c3;
+}
+
+#contacts a:active {
+    color: #dac3c3;
+}
+
+#cookie-policy {
+    text-align: center;
+    border-top: 1px dashed #4d91e9;
+    position: fixed;
+    bottom: 5px;
+}

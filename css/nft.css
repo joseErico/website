@@ -1,0 +1,90 @@
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+}
+
+body {
+    color: #4d91e9;
+    margin: 0;
+}
+
+#top {
+    text-align: center;
+    line-height: 5px;
+    border-bottom: #4d91e9 1px dashed;
+    font-weight: bold;
+}
+
+#middle {
+    width: 100%;
+}
+
+#nft {
+    font-weight: bold;
+}
+
+.gallery {
+    display: flex;
+    width: 100%;
+}
+
+.gallery-space {
+    width: 25%;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 450px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: #342753;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flip-card-back h1 {
+    text-align: center;
+}
+
+.flip-card-back p {
+    margin-left: 5px;
+}
+
+.avatar {
+    width: 300px;
+    height: 450px;;
+}
+
+.mt {
+    margin-top: 40px;
+}
